@@ -181,14 +181,8 @@ Each experiment includes:
 
 ---
 
-# 📜 License
-Choose one:
-- MIT  
-- Apache 2.0  
-- CC BY-NC-ND 4.0  
-
----
 
 # 🤝 Contributions  
 PRs are welcome — especially additional mobile devices and models.
+
 
