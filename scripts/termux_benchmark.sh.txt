@@ -1,0 +1,29 @@
+#!/bin/bash
+# TinyMobileLLM - Mobile Benchmark Script
+
+PROMPT="Explain solar energy to a high-school student in simple English."
+LOG_DIR="benchmarks/mobile_logs"
+
+MODELS=(
+    "models/qwen2.5/qwen2.5-0.5b-instruct-q5_k_m.gguf"
+    "models/qwen2.5-1.5b/qwen2.5-1.5b-instruct-q3_k_m.gguf"
+    "models/qwen2.5-1.5b/qwen2.5-1.5b-instruct-q4_k_m.gguf"
+    "models/qwen2.5-1.5b/qwen2.5-1.5b-instruct-q5_k_m.gguf"
+    "models/recurrentgemma/rlpr-gemma2-2b-it-q2_k.gguf"
+    "models/gemma/gemma-3n-e2b-it-q3_k_m.gguf"
+)
+
+THREADS=(1 2 4)
+
+mkdir -p $LOG_DIR
+
+for model in "${MODELS[@]}"; do
+    base=$(basename "$model")
+
+    for t in "${THREADS[@]}"; do
+        log="$LOG_DIR/${base}_t${t}.txt"
+        echo "Running $base with $t threads..."
+
+        ./llama-cli -m "$model" -p "$PROMPT" -n 100 -t $t > "$log"
+    done
+done

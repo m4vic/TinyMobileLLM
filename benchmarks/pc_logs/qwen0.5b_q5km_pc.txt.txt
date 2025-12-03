@@ -1,0 +1,13 @@
+Raw Benchmark Output
+
+```
+llama_perf_sampler_print:    sampling time =       7.66 ms /   120 runs   (    0.06 ms per token, 15659.66 tokens per second)
+llama_perf_context_print:        load time =     319.11 ms
+llama_perf_context_print: prompt eval time =     105.87 ms /    21 tokens (    5.04 ms per token,   198.35 tokens per second)
+llama_perf_context_print:        eval time =    1216.18 ms /    98 runs   (   12.41 ms per token,    80.58 tokens per second)
+llama_perf_context_print:       total time =    3092.26 ms /   119 tokens
+llama_perf_context_print:    graphs reused =         97
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                  852 =   492 +      48 +     311                |
+Interrupted by user
+``

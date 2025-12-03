@@ -1,0 +1,26 @@
+raw benchmark + output
+
+qwen1.5b q4 t1 raw benchmark 
+
+ 
+llama_perf_sampler_print:   sampling time =      32.33 ms /   121 runs   (    0.27 ms per token,  3742.31 tokens per second)
+llama_perf_context_print:        load time =    5373.23 ms
+llama_perf_context_print: prompt eval time =    1208.58 ms /    21 tokens (   57.55 ms per token,    17.38 tokens per second)
+llama_perf_context_print:        eval time =   15742.16 ms /    99 runs   (  159.01 ms per token,     6.29 tokens per second)
+llama_perf_context_print:       total time =   19630.63 ms /   120 tokens
+llama_perf_context_print:    graphs reused =         99
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 1474 =  1059 +     112 +     302                |
+
+
+qwen1.5b q4 t1 raw output
+
+
+user
+Explain solar energy to a high-school student in simple English.
+assistant
+Sure, I'd be happy to explain solar energy to you in simple terms!
+
+Solar energy is like getting energy from the sun. Just imagine, the sun is a giant ball of light and heat up in the sky. It's so bright that it makes everything around us feel warm and bright. The sun gives us light and heat, but it also makes us want to cool off on hot days!
+
+Now, there's another type of light called "visible light" that we can see. It's

@@ -1,0 +1,94 @@
+# recurrentgemma2b 
+
+raw benchmark + output 
+
+t1 raw benchmark 
+
+```
+llama_perf_sampler_print:    sampling time =      54.62 ms /   122 runs   (    0.45 ms per token,  2233.57 tokens per second)
+llama_perf_context_print:        load time =    7338.90 ms
+llama_perf_context_print: prompt eval time =    1462.20 ms /    22 tokens (   66.46 ms per token,    15.05 tokens per second)
+llama_perf_context_print:        eval time =   19400.58 ms /    99 runs   (  195.97 ms per token,     5.10 tokens per second)
+llama_perf_context_print:       total time =   25963.69 ms /   121 tokens
+llama_perf_context_print:    graphs reused =         99
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 2087 =  1167 +     416 +     504                |
+
+```
+
+
+t1 raw output 
+
+
+user
+Explain solar energy to a high-school student in simple English.
+model
+Alright, imagine a giant ball of fire in the sky that's constantly giving off heat and light. That's the sun, and its energy is what we call "solar energy" - basically, the sun's power!
+Here's the breakdown:
+
+*1. The Basics: ☀️*
+
+* The sun is a massive ball of hot, glowing gas powered by nuclear reactions.
+* It's a giant nuclear reactor, where atoms are constantly bombarded and releasing
+
+
+
+t2 raw benchmark 
+
+```
+> 
+llama_perf_sampler_print:   sampling time =      24.74 ms /   122 runs   (    0.20 ms per token,  4932.08 tokens per second)
+llama_perf_context_print:        load time =    2141.34 ms
+llama_perf_context_print: prompt eval time =    2471.70 ms /    22 tokens (  112.35 ms per token,     8.90 tokens per second)
+llama_perf_context_print:        eval time =   17193.04 ms /    99 runs   (  173.67 ms per token,     5.76 tokens per second)
+llama_perf_context_print:       total time =   27961.70 ms /   121 tokens
+llama_perf_context_print:    graphs reused =         99
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 2087 =  1167 +     416 +     504                |
+
+```
+
+t2 raw output
+
+
+user
+Explain solar energy to a high-school student in simple English.
+model
+Imagine a giant, powerful power station on the sun, constantly sending out waves of energy in the form of light and heat. This energy is the key to what's called "solar energy".
+
+Here's a breakdown:
+
+* *What is it?*  It's a form of renewable energy that uses the sun's power to generate electricity and heat.
+* *How does it work?*  There are two main types:
+    * **Solar panels
+
+
+t4 raw benchmark 
+
+```
+> llama_perf_sampler_print:   sampling time =      27.79 ms /   122 runs   (    0.23 ms per token,  4390.23 tokens per second)
+llama_perf_context_print:        load time =    6815.61 ms
+llama_perf_context_print: prompt eval time =    1300.58 ms /    22 tokens (   59.12 ms per token,    16.92 tokens per second)
+llama_perf_context_print:        eval time =   11149.09 ms /    99 runs   (  112.62 ms per token,     8.88 tokens per second)
+llama_perf_context_print:       total time =   15860.45 ms /   121 tokens
+llama_perf_context_print:    graphs reused =         99
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 2087 =  1167 +     416 +     504                |
+```
+
+t4 raw output - 
+
+
+user
+Explain solar energy to a high-school student in simple English.
+model
+Okay, imagine the sun, that big, bright ball we see every day. It's basically a giant ball of hot, powerful energy!
+
+Here's how solar energy works:
+
+*The Sun's Power:*
+
+* The sun is constantly burning a massive amount of energy, called *solar energy*. This energy is produced from nuclear fusion - basically, tiny atoms of hydrogen are combining to create massive amounts of energy.
+* This energy is released as **light and heat
+
+

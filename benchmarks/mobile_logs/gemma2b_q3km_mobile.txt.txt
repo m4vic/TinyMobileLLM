@@ -1,0 +1,30 @@
+raw benchmark 
+
+
+gemma2b t1 raw benchmark
+
+
+```
+
+llama_perf_sampler_print:    sampling time =      99.74 ms /   114 runs   (    0.87 ms per token,  1142.95 tokens per second)
+llama_perf_context_print:        load time =   10628.73 ms
+llama_perf_context_print: prompt eval time =    1737.79 ms /    14 tokens (  124.13 ms per token,     8.06 tokens per second)
+llama_perf_context_print:        eval time =   27143.90 ms /    99 runs   (  274.18 ms per token,     3.65 tokens per second)
+llama_perf_context_print:       total time =   29040.09 ms /   113 tokens
+llama_perf_context_print:    graphs reused =         98
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 2770
+
+```
+
+
+gemma2b t1 raw output
+
+Explain solar energy to a high-school student in simple English.
+
+Okay, so let's talk about solar energy! It's a really cool source of power, and it's becoming increasingly important for the future. Here's the breakdown:
+
+*What is Solar Energy?*
+
+*   *It's basically energy from the sun.*  Think about it like this: the sun is constantly putting out energy (light and heat).
+*   *That energy can be captured and used for different things.*  Instead of just letting

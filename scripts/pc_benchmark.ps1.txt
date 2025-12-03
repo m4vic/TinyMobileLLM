@@ -1,0 +1,25 @@
+# pc_benchmark.ps1
+# TinyMobileLLM - PC Benchmark Script
+
+$models = @(
+    "models/qwen2.5/qwen2.5-0.5b-instruct-q5_k_m.gguf",
+    "models/qwen2.5-1.5b/qwen2.5-1.5b-instruct-q3_k_m.gguf",
+    "models/qwen2.5-1.5b/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "models/qwen2.5-1.5b/qwen2.5-1.5b-instruct-q5_k_m.gguf",
+    "models/gemma/gemma-3n-e2b-it-q3_k_m.gguf",
+    "models/recurrentgemma/rlpr-gemma2-2b-it-q2_k.gguf"
+)
+
+$prompt = "Explain solar energy to a high-school student in simple English."
+
+if (!(Test-Path "benchmarks/pc_logs")) {
+    New-Item -ItemType Directory -Path "benchmarks/pc_logs" | Out-Null
+}
+
+foreach ($model in $models) {
+    $name = Split-Path $model -Leaf
+    $output = "benchmarks/pc_logs/$name.txt"
+
+    Write-Host "Running benchmark for: $name"
+    .\llama-cli.exe -m $model -p $prompt -n 200 | Out-File -FilePath $output -Encoding utf8
+}

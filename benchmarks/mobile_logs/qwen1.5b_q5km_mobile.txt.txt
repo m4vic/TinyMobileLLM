@@ -1,0 +1,74 @@
+raw benchmark + output 
+
+qwen 1.5b q5 t1 raw benchmark 
+
+```
+> 
+llama_perf_sampler_print:   sampling time =      45.75 ms /   121 runs   (    0.38 ms per token,  2644.75 tokens per second)
+llama_perf_context_print:        load time =    6404.97 ms
+llama_perf_context_print: prompt eval time =    1070.95 ms /    21 tokens (   51.00 ms per token,    19.61 tokens per second)
+llama_perf_context_print:        eval time =   16552.58 ms /    99 runs   (  167.20 ms per token,     5.98 tokens per second)
+llama_perf_context_print:       total time =   21339.37 ms /   120 tokens
+llama_perf_context_print:    graphs reused =         99
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 1635 =  1220 +     112 +     302                |
+
+```
+
+qwen 1.5b q5 t1 raw output
+
+
+
+user
+Explain solar energy to a high-school student in simple English.
+assistant
+Solar energy is the energy that comes from the sun. The sun is a big ball of fire in the middle of our solar system that shines brightly and gives off light. The light from the sun travels through space to Earth and reaches our planet.
+
+When sunlight hits Earth, it warms up everything it touches. Some of the energy from the sun is used to make things that people like, like food and clothing. This is called "converting" or "harvesting" solar energy.
+
+
+
+
+qwen 1.5b q5 t2 raw benchmark
+
+
+
+llama_perf_sampler_print:   sampling time =      17.54 ms /   121 runs   (    0.14 ms per token,  6899.30 tokens per second)                                    
+ llama_perf_context_print:        load time =     977.44 ms
+llama_perf_context_print: prompt eval time =    1639.08 ms /    21 tokens (   78.05 ms per token,    12.81 tokens per second)                                     
+llama_perf_context_print:        eval time =   11075.47 ms /    99 runs   (  111.87 ms per token,     8.94 tokens per second)                                    
+ llama_perf_context_print:       total time =   24025.16 ms /   120 tokens
+llama_perf_context_print:    graphs reused =         99
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |                                        
+llama_memory_breakdown_print: |   - Host               |                 1635 =  1220 +     112 +     302                |                                       
+Interrupted by user
+
+
+qwen 1.5b q5 t2 raw output
+
+
+1.  *The Sun's Energy*: The sun gives off heat and light, which travels through space like a big light bulb.
+
+2. *Solar Panels*: We use special materials called solar panels that can capture this energy. These panels look like big, shiny plates and are usually installed on roofs or on the ground outside.                                              
+3. *Energy Conversion*: When sunlight hits the
+
+
+
+qwen 1.5b q5 t4 raw benchmark 
+llama_perf_sampler_print:    sampling time =      55.58 ms /   121 runs   (    0.46 ms per token,  2177.24 tokens per second)
+llama_perf_context_print:        load time =    5577.53 ms
+llama_perf_context_print: prompt eval time =    1131.49 ms /    21 tokens (   53.88 ms per token,    18.56 tokens per second)                                     llama_perf_context_print:        eval time =    8914.75 ms /    99 runs   (   90.05 ms per token,    11.11 tokens per second)
+llama_perf_context_print:       total time =   19565.55 ms /   120 tokens        llama_perf_context_print:    graphs reused =         99
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 1635 =  1220 +     112 +     302                |
+
+
+qwen 1.5b q5 t4 raw output
+
+Explain solar energy to a high-school student in simple English.
+assistant
+Sure! Solar energy is energy that comes from the sun. The sun gives off energy in the form of light and heat. Solar energy technology captures some of that light and heat and turns it into electricity.
+
+Imagine the sun as a big, warm light bulb that's always on. Solar panels are like special windows or screens that can capture and store some of that sun's energy. When the sun shines, the panels absorb the energy, and the stored energy can then be used to power things like 
+
+

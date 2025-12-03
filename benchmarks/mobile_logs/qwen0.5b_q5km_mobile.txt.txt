@@ -1,0 +1,62 @@
+Raw Benchmark Output
+
+qwern 0.5b q5 t1 raw benchmark
+
+```
+llama_perf_sampler_print:    sampling time =      35.73 ms /   121 runs   (    0.30 ms per token,  3386.13 tokens per second)
+llama_perf_context_print:        load time =     668.26 ms
+llama_perf_context_print: prompt eval time =     520.71 ms /    21 tokens (   24.80 ms per token,    40.33 tokens per second)
+llama_perf_context_print:        eval time =    6093.94 ms /    99 runs   (   61.55 ms per token,    16.25 tokens per second)
+llama_perf_context_print:       total time =    8664.58 ms /   120 tokens
+llama_perf_context_print:    graphs reused =         99
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                  852 =   492 +      48 +     311                |
+Interrupted by user
+
+```
+
+Qwen 0.5b q5 t1 raw output
+
+user
+Explain solar energy to a high-school student in simple English.
+assistant
+Sure! Imagine the sun is a big, powerful ball of energy that gives light and heat to the Earth.
+ This light and heat can make things glow and warm up, just like how a fire makes the grass grow or the sun makes the Earth warm up.
+ This is called solar energy. Solar energy is very important because it helps us
+ to have clean energy to power our homes and factories, as well as to run the machines that help us to work, like the airplanes that take us to the sky
+
+
+
+
+
+
+
+Qwen 0.5b q5 t4 raw benchmark 
+
+```
+llama_perf_sampler_print:    sampling time =      63.57 ms /   121 runs   (    0.53 ms per token,  1903.29 tokens per second)                                    
+ llama_perf_context_print:        load time =    1915.66 ms                      
+ llama_perf_context_print: prompt eval time =     532.28 ms /    21 tokens (   25.35 ms per token,    39.45 tokens per second)
+llama_perf_context_print:        eval time =    6408.52 ms /    99 runs   (   64.73 ms per token,    15.45 tokens per second)
+llama_perf_context_print:       total time =    9913.97 ms /   120 tokens
+llama_perf_context_print:    graphs reused =         99                          llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |                                      
+llama_memory_breakdown_print: |   - Host               |                  852 =   492 +      48 +     311                |
+Interrupted by user
+```
+
+
+
+
+Qwen 0.5b q5 t4 raw output
+
+Explain solar energy to a high-school student in simple English.
+assistant
+Sure, I'd be happy to explain solar energy to a high-school student in simple terms! Let's break it down in a way that's easy to understand.
+
+### What is Solar Energy?
+
+Solar energy is a way of making energy from the sun. Think of it like a magical light that comes right out of the sun. It's free to use, and it can help us make things in a very different way than we do with other fuels.
+
+### How Does It Work?
+
+Here's how  
