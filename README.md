@@ -37,18 +37,17 @@ tinyMobileLLM/
 │
 ├── benchmarks/
 │   ├── pc_logs/
-│   ├── mobile_logs/
-│   └── plots/
+│   └── mobile_logs/
 │
 ├── scripts/
 │   ├── pc_benchmark.ps1
-│   ├── termux_benchmark.sh
-│   └── utils/
+│   └── termux_benchmark.sh
+│   
 │
 └── media/
     ├── screenshots/
-    ├── recordings/
-    └── diagrams/
+    └──recordings/
+    
 ```
 
 ---
@@ -184,5 +183,6 @@ Each experiment includes:
 
 # 🤝 Contributions  
 PRs are welcome — especially additional mobile devices and models.
+
 
 
