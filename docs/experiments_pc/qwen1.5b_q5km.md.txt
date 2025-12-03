@@ -1,0 +1,56 @@
+## Qwen2.5 — 1.5B (Q5_K_M) — PC Benchmark
+### 1. Model Details
+
+Model: Qwen2.5 1.5B Instruct
+Parameters: 1.5B
+Quantization: Q5_K_M
+File: qwen2.5-1.5b-instruct-q5_k_m.gguf
+
+Prompt:
+“Explain solar energy to a high-school student in simple English.”
+
+### 2. Device Specification
+
+CPU: Intel i5–12400F
+GPU: Nvidia RTX 3060 (not used for inference)
+RAM: 16GB DDR4
+OS: Windows 10
+
+llama.cpp build: llama.cpp-b7109.zip (prebuilt binaries)
+
+### 3. Command Used
+.\llama-cli.exe -m "C:\Users\ZENITH\tinyMobileLLM\models\qwen2.5-1.5b\qwen2.5-1.5b-instruct-q5_k_m.gguf" -p "Explain solar energy to a high-school student in simple English." -n 200
+
+### 4. Raw Benchmark Log
+
+Raw logs stored at:
+../../benchmarks/pc_logs/qwen15b_q5km_pc.txt
+
+### 5. Extracted Metrics
+
+| Metric                     | Value             |
+| -------------------------- | ----------------- |
+| **Load Time**              | 468.28 ms         |
+| **Prompt Eval Time**       | 269.69 ms         |
+| **Prompt TPS**             | 77.87 tokens/s    |
+| **Decode Time**            | 5523.65 ms        |
+| **Decode TPS**             | 33.85 tokens/s    |
+| **Sampling Speed**         | 14497.78 tokens/s |
+| **Total Tokens Evaluated** | 208               |
+| **Host Memory Used**       | 1635 MiB          |
+
+### 6. Interpretation
+
+RAM usage is identical to Q4_K_M (~1.63GB), meaning Q5 precision does not add extra memory overhead under K_M scheme.
+Decode speed is ~33 tokens/s, essentially the same as Q4_K_M.
+This means performance penalty from Q4 → Q5 is almost zero on CPU.
+Higher precision mainly improves generation quality, especially factual accuracy and coherence.
+Load time is still under half a second, which is impressive.
+
+Conclusion:
+This is the highest-quality quantization you tested for Qwen 1.5B, with almost no performance loss compared to Q4.
+
+### 7. Notes
+
+Still too large for most 6–8GB mobile devices.
+Ideal for desktops and high-end tablets with 12–16GB RAM..

@@ -1,0 +1,62 @@
+## Qwen2.5 — 1.5B (Q3_K_M) — PC Benchmark
+### 1. Model Details
+
+- Model: Qwen2.5 1.5B Instruct
+- Parameters: 1.5B
+- Quantization: Q3_K_M
+- File: qwen2.5-1.5b-instruct-q3_k_m.gguf
+
+### Prompt:
+
+“Explain solar energy to a high-school student in simple English.”
+
+### 2. Device Specification
+
+- CPU: Intel i5–12400F
+- GPU: Nvidia RTX 3060 (not used for inference)
+- RAM: 16GB DDR4
+- OS: Windows 10
+
+llama.cpp build: llama.cpp-b7109.zip (prebuilt binaries)
+
+### 3. Command Used
+```
+.\llama-cli.exe -m "C:\Users\ZENITH\tinyMobileLLM\models\qwen2.5-1.5b\qwen2.5-1.5b-instruct-q3_k_m.gguf" -p "Explain solar energy to a high-school student in simple English." -n 200
+
+```
+### 4. Raw Benchmark Log
+
+(Store the full raw output in this file instead):
+../../benchmarks/pc_logs/qwen15b_q3km_pc.txt
+
+### 5. Extracted Metrics
+| Metric                     | Value             |
+| -------------------------- | ----------------- |
+| **Load Time**              | 494.21 ms         |
+| **Prompt Eval Time**       | 224.31 ms         |
+| **Prompt TPS**             | 93.62 tokens/s    |
+| **Decode Time**            | 3870.46 ms        |
+| **Decode TPS**             | 39.79 tokens/s    |
+| **Sampling Speed**         | 14379.08 tokens/s |
+| **Total Tokens Evaluated** | 175               |
+| **Host Memory Used**       | 1290 MiB          |
+
+
+
+### 6. Interpretation
+
+- Q3_K_M reduces memory load significantly, bringing the 1.5B model down to ~1.29 GB, making it approachable for larger mobile devices (6–8GB RAM).
+
+- Prompt evaluation speed is ~93 tokens/s, which is slower than 0.5B but good for a 1.5B model.
+
+- Decode speed holds at ~39 tokens/s, which is solid and noticeably faster than Q4/K and Q5/K variants.
+
+- Load time is under 0.5 seconds, good for interactive use.
+
+This quantization is a great middle-ground between speed and quality for this size.
+
+### 7. Notes
+
+- The process was interrupted by the user, but logs contained enough complete data for extraction.
+
+- This model will be compared against Q4_K_M and Q5_K_M versions to measure quality vs. performance trade-offs.

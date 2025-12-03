@@ -1,0 +1,51 @@
+## Qwen2.5 — 0.5B (Q5_K_M) — PC Benchmark
+
+## 1. Model Details
+
+- Model: Qwen2.5 0.5B Instruct
+- Parameters: 0.5B
+- Quantization: Q5_K_M
+- File: qwen2.5-0.5b-instruct-q5_k_m.gguf
+
+Prompt:
+“Explain solar energy to a high-school student in simple English.”
+
+## 2. Device Specification
+
+- CPU: Intel i5–12400F
+- GPU: Nvidia RTX 3060 (not used in inference)
+- RAM: 16GB DDR4
+- OS: Windows 10
+- llama.cpp build: llama.cpp-b7109.zip (prebuilt binaries)
+
+## 3. Cammand Used
+``` 
+.\llama-cli.exe -m "C:\Users\ZENITH\tinyMobileLLM\models\qwen2.5\qwen2.5-0.5b-instruct-q5_k_m.gguf" -p "Explain solar energy to a high-school student in simple English." -n 200
+```
+
+## 4. Extracted Metrics
+Metric	Value
+Load Time	319.11 ms
+Prompt Eval Time	105.87 ms
+Prompt TPS	198.35 tokens/s
+Decode Time	1216.18 ms
+Decode TPS	80.58 tokens/s
+Sampling Speed	15659.66 tokens/s
+Total Tokens Evaluated	119
+Host Memory Used	852 MiB
+
+## 5. Interpretation
+
+This model is very lightweight and loads extremely fast (0.3s).
+Prompt evaluation speed is excellent (~198 tokens/s).
+Decode speed (main generation phase) is ~80 tokens/s, which is very fast for a 0.5B model and ideal for mobile inference testing later.
+Memory usage is low: ~850 MiB, making it suitable for mid-range Android devices.
+Q5_K_M quantization maintains high speed while preserving usable output quality.
+
+Overall:
+This is the fastest and most efficient model in the TinyMobileLLM test batch so far, ideal for real-time offline usage.
+
+## 6. Notes
+
+This model will serve as the “baseline tiny model” for later mobile comparisons.
+Future comparison will include Q3_K_M and Q4_K_M once tested.
