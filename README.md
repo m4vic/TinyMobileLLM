@@ -13,7 +13,7 @@ All tests use **llama.cpp** with **GGUF models**.
 
 ---
 
-# 📦 Project Structure
+# Project Structure
 
 ```
 tinyMobileLLM/
@@ -91,7 +91,7 @@ tinyMobileLLM/models/<model-family>/
 (Full structure shown in Model Inventory.)
 
 
-# 🚀 Quickstart
+#  Quickstart
 
 ## PC Inference
 ```
@@ -105,7 +105,7 @@ tinyMobileLLM/models/<model-family>/
 
 ---
 
-# 📊 Summary Tables
+#  Summary Tables
 
 ## **PC Decode Speed (tokens/s)**
 
@@ -145,7 +145,7 @@ tinyMobileLLM/models/<model-family>/
 
 ---
 
-# 🏆 Recommended Tiny Models for Mobile
+# Recommended Tiny Models for Mobile
 
 | Rank | Model | Why |
 |------|--------|------|
@@ -183,6 +183,7 @@ Each experiment includes:
 
 # 🤝 Contributions  
 PRs are welcome — especially additional mobile devices and models.
+
 
 
 
