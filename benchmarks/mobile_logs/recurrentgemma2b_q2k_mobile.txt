@@ -92,3 +92,34 @@ Here's how solar energy works:
 * This energy is released as **light and heat
 
 
+t6 raw benchmark
+
+llama_perf_context_print:        load time =     899.33 ms
+llama_perf_context_print: prompt eval time =    1196.75 ms /    16 tokens (   74.80 ms per token,    13.37 tokens per second)
+llama_perf_context_print:        eval time =   34984.23 ms /   199 runs   (  175.80 ms per token,     5.69 tokens per second)
+llama_perf_context_print:       total time =   51176.08 ms /   215 tokens
+llama_perf_context_print:    graphs reused =        199
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 2087 =  1167 +     416 +     504                |
+
+
+t6 raw output
+
+
+user
+Write a detailed essay on AI governance
+model
+## Navigating the Uncharted Waters:  AI Governance in a World of Disruption
+
+Artificial intelligence (AI) is rapidly transforming every aspect of our lives, from healthcare and finance to transportation and even art itself. This rapid evolution necessitates a robust and multifaceted approach to AI governance, ensuring its ethical, safe, and beneficial deployment.
+
+*The Challenges of AI Governance:*
+
+1. *Defining AI's Scope:* What constitutes "AI"? Are we talking about machine learning, deep learning, and self-driving algorithms? Defining this scope is crucial for crafting tailored governance strategies.
+
+2. *Balancing Interests:* Who gets to decide how AI is governed? It’s a complex question involving governments, corporations, researchers, and individual users. This requires open dialogue and collaboration.
+
+3. *Prioritizing Ethical and Legal Considerations:* We need clear guidelines for data privacy, algorithm transparency, and fairness. This includes addressing potential biases and ensuring the use of AI doesn't exacerbate societal inequalities
+
+
+
