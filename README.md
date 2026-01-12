@@ -52,7 +52,7 @@ tinyMobileLLM/
 
 ---
 
-# 🧩 Requirements
+# Requirements
 
 ### **PC**
 - Windows 10  
@@ -68,7 +68,7 @@ tinyMobileLLM/
 
 ---
 
-# 🔽 Download Required Models (GGUF)
+# Download Required Models (GGUF)
 
 You must download the same models used in our benchmarks.
 
@@ -149,13 +149,13 @@ tinyMobileLLM/models/<model-family>/
 
 | Rank | Model | Why |
 |------|--------|------|
-| ⭐ #1 | **Qwen1.5B Q3_K_M** | Best speed/quality balance |
-| ⭐ #2 | **RecurrentGemma 2B Q2_K** | Best large model for phones |
-| ⭐ #3 | **Qwen0.5B Q5_K_M** | Extremely fast & lightweight |
+| #1 | **Qwen1.5B Q3_K_M** | Best speed/quality balance |
+| #2 | **RecurrentGemma 2B Q2_K** | Best large model for phones |
+| #3 | **Qwen0.5B Q5_K_M** | Extremely fast & lightweight |
 
 ---
 
-# 🔍 Experiment Documentation
+# Experiment Documentation
 
 - All PC experiments → `docs/experiments_pc/`
 - All Mobile experiments → `docs/experiments_mobile/`
@@ -170,7 +170,7 @@ Each experiment includes:
 
 ---
 
-# 🛣 Future Work
+# Future Work
 
 - more models (Phi-2, MiniCPM, RWKV)  
 - more devices (Snapdragon 8 Gen 1/2)  
@@ -183,7 +183,7 @@ Each experiment includes:
 # Youtube video representation language (hindi)
 
 
-# 🤝 Contributions  
+# 🤝Contributions  
 PRs are welcome — especially additional mobile devices and models.
 
 
